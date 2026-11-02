@@ -32,7 +32,8 @@
     "The reward wrapper retains only PickScore and preserves the internal divisor 26.",
     "README and release/download/license files replace personal development notes.",
     "ART third-party notices point to the scoped root inventory.",
-    "No NFT/ART loss, covariance, optimizer or sampler algorithm is intentionally changed for release."
+    "No NFT/ART loss, covariance, optimizer or sampler algorithm is intentionally changed for release.",
+    "Root Apache license is rendered as Markdown; its complete wording is preserved after removing heading markers and whitespace."
   ],
   "exclusions": [
     "docs/",
@@ -61,10 +62,10 @@
       "sha256": "17005695e244a9875848208e09a29ae4022336a1df01ba814c26f5eceec0dc87"
     },
     {
-      "path": "LICENSE",
-      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "path": "LICENSE.md",
+      "sha256": "c0032f3c9a3d1a94eaa05b76f4d4f7b401304d9863d396c2892b1830c67602a5",
       "adaptation_snapshot_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
-      "changed_for_release": false
+      "changed_for_release": true
     },
     {
       "path": "NOTICE",
@@ -72,7 +73,7 @@
     },
     {
       "path": "README.md",
-      "sha256": "bb8b89f2b8e39c3b8bae391ed98f2c5426dfda197dcc3fd011c15d43b0d027b4",
+      "sha256": "bcdadf8428808a2423d074a30e9482b7a98e9f03291b3fd5fd9449bb781f05ba",
       "adaptation_snapshot_sha256": "b2cb0d0f50fa992d4af7847b30278b06c4aee4978f82dc1c6b50bde43c46f8e0",
       "changed_for_release": true
     },
@@ -84,7 +85,7 @@
     },
     {
       "path": "THIRD_PARTY_NOTICES.md",
-      "sha256": "174a921ffa44b8859981a9179d04d88f5a15385eefe0b18fb94a3e21b5f6c802"
+      "sha256": "b6601e53b2015c42111d7e88920868432688799dbee05a1c0216676cdcdf3316"
     },
     {
       "path": "config/__init__.py",
@@ -266,8 +267,8 @@
     }
   ],
   "prompt_source": {
+    "verification": "Remote Git blob IDs match the local SHA256-verified reference prompt files.",
     "repository": "https://github.com/NVlabs/DiffusionNFT",
-    "revision": "cbb14f84b8312b620390dfcbe2fab69c1383b104",
-    "verification": "Remote Git blob IDs match the local SHA256-verified reference prompt files."
+    "revision": "cbb14f84b8312b620390dfcbe2fab69c1383b104"
   }
 }

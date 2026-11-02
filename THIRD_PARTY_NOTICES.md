@@ -1,7 +1,7 @@
 # Third-party notices
 
 This repository integrates third-party research code and separately installed
-model libraries. The root `LICENSE` contains the Apache License, Version 2.0.
+model libraries. The root `LICENSE.md` contains the Apache License, Version 2.0.
 It does not replace the terms of the third-party portions identified below.
 In particular, the inherited NFT solver has MixGRPO provenance and must not be
 presented as carrying unrestricted Apache-2.0 permissions.
@@ -16,7 +16,7 @@ snapshot. The original download did not record a repository commit; the source
 inventory records file hashes instead. A current upstream commit must not be
 substituted for that unknown snapshot revision.
 
-DiffusionNFT's project license is Apache-2.0, reproduced in the root `LICENSE`.
+DiffusionNFT's project license is Apache-2.0, reproduced in the root `LICENSE.md`.
 The inherited NVIDIA training-file copyright notice is retained in its source:
 
 > Copyright (c) 2025 NVIDIA CORPORATION & AFFILIATES. All rights reserved.

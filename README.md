@@ -233,7 +233,7 @@ sana-posttrain/
   LICENSES/                   # Additional upstream license texts
   requirements.txt
   constraints.txt
-  LICENSE
+  LICENSE.md
   NOTICE
   THIRD_PARTY_NOTICES.md
   SOURCE_MANIFEST.json
@@ -250,6 +250,6 @@ This implementation builds on the following work:
 - [DiffusionART](https://github.com/vanzll/DiffusionART), by contributors from NUS HPC-AI Lab, Kling AI and HKUST: ART loss/covariance kernels, disjoint-window construction and rollout conventions.
 - [Flow-GRPO](https://github.com/yifan123/flow_grpo), [MixGRPO](https://github.com/Tencent-Hunyuan/MixGRPO), [Hugging Face Diffusers](https://github.com/huggingface/diffusers), [PEFT](https://github.com/huggingface/peft), and [PickScore](https://github.com/yuvalkirstain/PickScore) for the underlying research and tooling.
 
-The project adaptations use Apache-2.0; upstream copyright and permission notices remain in place. **The inherited NFT solver is derived from MixGRPO and remains subject to its separate license, including academic-use restrictions. This repository is not uniformly Apache-2.0 and does not grant commercial rights to that solver.** See [LICENSE](LICENSE), [NOTICE](NOTICE), [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) and [LICENSES/MixGRPO.txt](LICENSES/MixGRPO.txt) for the applicable scope.
+The project adaptations use Apache-2.0; upstream copyright and permission notices remain in place. **The inherited NFT solver is derived from MixGRPO and remains subject to its separate license, including academic-use restrictions. This repository is not uniformly Apache-2.0 and does not grant commercial rights to that solver.** See [LICENSE.md](LICENSE.md), [NOTICE](NOTICE), [THIRD_PARTY_NOTICES.md](THIRD_PARTY_NOTICES.md) and [LICENSES/MixGRPO.txt](LICENSES/MixGRPO.txt) for the applicable scope.
 
 Model weights, the Gemma text encoder, processor assets and prompt datasets retain their own terms; this repository's license does not relicense them. The [Sana model card](https://huggingface.co/Efficient-Large-Model/Sana_600M_1024px_diffusers) links the applicable Gemma terms. Download and review external assets from their original sources. Source provenance and release modifications are recorded in `SOURCE_MANIFEST.json` and `flow_grpo/art/SOURCE.json`.
