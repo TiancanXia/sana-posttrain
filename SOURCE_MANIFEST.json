@@ -1,0 +1,273 @@
+{
+  "schema_version": 1,
+  "project": "Sana PostTrain",
+  "release_date": "2026-11-02",
+  "upstreams": [
+    {
+      "name": "DiffusionNFT",
+      "note": "Adapted from a downloaded research tree; no upstream commit asserted. Unchanged file hashes are recorded below.",
+      "revision": null,
+      "repository": "https://github.com/NVlabs/DiffusionNFT"
+    },
+    {
+      "manifest": "flow_grpo/art/SOURCE.json",
+      "name": "DiffusionART",
+      "revision": null,
+      "repository": "https://github.com/vanzll/DiffusionART"
+    },
+    {
+      "name": "Sana",
+      "role": "Separately downloaded Diffusers-format model; native source not vendored",
+      "repository": "https://github.com/NVlabs/Sana"
+    },
+    {
+      "name": "MixGRPO",
+      "role": "Inherited NFT solver lineage; additional academic-use license retained in LICENSES/MixGRPO.txt",
+      "repository": "https://github.com/Tencent-Hunyuan/MixGRPO"
+    }
+  ],
+  "release_changes": [
+    "Standalone asset paths are resolved by config/paths.py with environment overrides.",
+    "Requirements use installed Diffusers 0.36.0 instead of a sibling editable checkout.",
+    "The reward wrapper retains only PickScore and preserves the internal divisor 26.",
+    "README and release/download/license files replace personal development notes.",
+    "ART third-party notices point to the scoped root inventory.",
+    "No NFT/ART loss, covariance, optimizer or sampler algorithm is intentionally changed for release."
+  ],
+  "exclusions": [
+    "docs/",
+    "tests/",
+    "dataset prompt text",
+    "models and reward checkpoints",
+    "dependency source trees",
+    "outputs/",
+    "logs/",
+    "personal development notes"
+  ],
+  "verification": "Static source, file inventory, link, language and SHA256 inspection only. No project imports, tests, installation, inference or training executed during release preparation.",
+  "files": [
+    {
+      "path": ".gitattributes",
+      "sha256": "5e5198a39ef4ad85703660a4fb3dedc1283409e079f8052ede4b67ef1455574b"
+    },
+    {
+      "path": ".gitignore",
+      "sha256": "edf9d24e5fdf43eba0d52b7ed1fad5819c09db8164f8fda87fb4beee936ad831",
+      "adaptation_snapshot_sha256": "e20c9a75aebe54fa37fd766b6aa1f91e93d1f230ac78774524d660839c53fe8c",
+      "changed_for_release": true
+    },
+    {
+      "path": "constraints.txt",
+      "sha256": "17005695e244a9875848208e09a29ae4022336a1df01ba814c26f5eceec0dc87"
+    },
+    {
+      "path": "LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "adaptation_snapshot_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "changed_for_release": false
+    },
+    {
+      "path": "NOTICE",
+      "sha256": "150a6fe99c8f33716cc02529d0b1bf46688e32fd40051503465f14fdff75b3b9"
+    },
+    {
+      "path": "README.md",
+      "sha256": "bb8b89f2b8e39c3b8bae391ed98f2c5426dfda197dcc3fd011c15d43b0d027b4",
+      "adaptation_snapshot_sha256": "b2cb0d0f50fa992d4af7847b30278b06c4aee4978f82dc1c6b50bde43c46f8e0",
+      "changed_for_release": true
+    },
+    {
+      "path": "requirements.txt",
+      "sha256": "28e0eaf92eb5eecceb88f9e3d8fffface43a8f522f16c910aeace3116e9f619c",
+      "adaptation_snapshot_sha256": "9ca64d40921a7bd4526778b6f37f3c61007fa7b2ba24d27d28d3c2d43f759e0c",
+      "changed_for_release": true
+    },
+    {
+      "path": "THIRD_PARTY_NOTICES.md",
+      "sha256": "174a921ffa44b8859981a9179d04d88f5a15385eefe0b18fb94a3e21b5f6c802"
+    },
+    {
+      "path": "config/__init__.py",
+      "sha256": "02280fa496c327204f85ea538777121a6f25eefede5f66660bd38331f8d23806",
+      "adaptation_snapshot_sha256": "02280fa496c327204f85ea538777121a6f25eefede5f66660bd38331f8d23806",
+      "changed_for_release": false
+    },
+    {
+      "path": "config/art.py",
+      "sha256": "75d53e014f4717e3054cc4390ed4489006d534d5aa456f04ffcf5e940cec23a7",
+      "adaptation_snapshot_sha256": "e2a7756f10ed1b63258a6835363600096e67d80fe073c5401c79c9c5ae5528cb",
+      "changed_for_release": true
+    },
+    {
+      "path": "config/base.py",
+      "sha256": "f23990050bb0d6ff09ffbbfd86177c4662e43e3b001cf7800b93ffaf974c5a63",
+      "adaptation_snapshot_sha256": "f23990050bb0d6ff09ffbbfd86177c4662e43e3b001cf7800b93ffaf974c5a63",
+      "changed_for_release": false
+    },
+    {
+      "path": "config/paths.py",
+      "sha256": "9d8a1f41956cc540cf25590114850d6a1693e1b87cf3f67e9fee6e34d789654f"
+    },
+    {
+      "path": "config/sana.py",
+      "sha256": "7ebfa8ab23359f3e46640b69e702cf68550582b6fdefef6835641fbdc2d6f32b",
+      "adaptation_snapshot_sha256": "c8df32cb802bf1fec9d368b4f4c036f8283de1cbd981a599592d4e7f945be76d",
+      "changed_for_release": true
+    },
+    {
+      "path": "flow_grpo/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "adaptation_snapshot_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "changed_for_release": false
+    },
+    {
+      "path": "flow_grpo/ema.py",
+      "sha256": "ac29a338c19fde2119b8a5c7c4b42a324ce7c6f7032bfb10f08550d89e8e0ed3",
+      "adaptation_snapshot_sha256": "ac29a338c19fde2119b8a5c7c4b42a324ce7c6f7032bfb10f08550d89e8e0ed3",
+      "changed_for_release": false
+    },
+    {
+      "path": "flow_grpo/pickscore_scorer.py",
+      "sha256": "7d0d336145233431fb13137e34c82cb2ca16e73fe7d0457d74680880e267836d",
+      "adaptation_snapshot_sha256": "7d0d336145233431fb13137e34c82cb2ca16e73fe7d0457d74680880e267836d",
+      "changed_for_release": false
+    },
+    {
+      "path": "flow_grpo/rewards.py",
+      "sha256": "98070d4e2e942e2cfdfaf0eb779f6ead2e673e8f0ed88e0d90fdd04276b63b84",
+      "adaptation_snapshot_sha256": "022efb7cd243d6124dfde05d447967fa04e185f9bd7ea13e5b4420ecfa475cfc",
+      "changed_for_release": true
+    },
+    {
+      "path": "flow_grpo/stat_tracking.py",
+      "sha256": "a4399e54e5e38171686f59a715b4b0304bd554ba47fa99c1dc04f0f330a2d154",
+      "adaptation_snapshot_sha256": "a4399e54e5e38171686f59a715b4b0304bd554ba47fa99c1dc04f0f330a2d154",
+      "changed_for_release": false
+    },
+    {
+      "path": "flow_grpo/art/__init__.py",
+      "sha256": "1a933a666fa008b4b24ce547f0d0fb426b22f603ddcbc0c6dd509d7ca5f7e474",
+      "adaptation_snapshot_sha256": "1a933a666fa008b4b24ce547f0d0fb426b22f603ddcbc0c6dd509d7ca5f7e474",
+      "changed_for_release": false
+    },
+    {
+      "path": "flow_grpo/art/_validation.py",
+      "sha256": "bb7d9a03c38d92b2ab6a1e7eb8ee10ce0f3e25bfe2af6c05af124a0e3d607b66",
+      "adaptation_snapshot_sha256": "bb7d9a03c38d92b2ab6a1e7eb8ee10ce0f3e25bfe2af6c05af124a0e3d607b66",
+      "changed_for_release": false
+    },
+    {
+      "path": "flow_grpo/art/art.py",
+      "sha256": "f05cde3ed4434efa3c6008927ebbc50e186180d0c8a2aa1083d6a0c4b2eb270d",
+      "adaptation_snapshot_sha256": "f05cde3ed4434efa3c6008927ebbc50e186180d0c8a2aa1083d6a0c4b2eb270d",
+      "changed_for_release": false
+    },
+    {
+      "path": "flow_grpo/art/covariance.py",
+      "sha256": "81be369efaffaee1770994f5e61e52811fd677a3a7006828cf9646465c6c8187",
+      "adaptation_snapshot_sha256": "81be369efaffaee1770994f5e61e52811fd677a3a7006828cf9646465c6c8187",
+      "changed_for_release": false
+    },
+    {
+      "path": "flow_grpo/art/LICENSE",
+      "sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "adaptation_snapshot_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4",
+      "changed_for_release": false
+    },
+    {
+      "path": "flow_grpo/art/NOTICE",
+      "sha256": "0dc32db79c3622b8b7e6befe4ad9d5d23f68fe27e88633ee09fbb453dfd68497",
+      "adaptation_snapshot_sha256": "0dc32db79c3622b8b7e6befe4ad9d5d23f68fe27e88633ee09fbb453dfd68497",
+      "changed_for_release": false
+    },
+    {
+      "path": "flow_grpo/art/sampling.py",
+      "sha256": "8508dafbe08c762e6e1b6056c24b6abb8cd0c02de170d7f6e1e5ccb875bbbfc5",
+      "adaptation_snapshot_sha256": "8508dafbe08c762e6e1b6056c24b6abb8cd0c02de170d7f6e1e5ccb875bbbfc5",
+      "changed_for_release": false
+    },
+    {
+      "path": "flow_grpo/art/SOURCE.json",
+      "sha256": "116cd23a08eb8d6d901318b26fa077c1783069c566e66e6b5ab6db2d9b81e210",
+      "adaptation_snapshot_sha256": "556c925ef2396d8dae2a0ab6341d091085b9405d3b131495c5387401cd82d30f",
+      "changed_for_release": true
+    },
+    {
+      "path": "flow_grpo/art/SOURCE.md",
+      "sha256": "81d0779f6ffbc7aec114b58aec3c60295778769d22cf7771f5b60da4f6205b62",
+      "adaptation_snapshot_sha256": "81d0779f6ffbc7aec114b58aec3c60295778769d22cf7771f5b60da4f6205b62",
+      "changed_for_release": false
+    },
+    {
+      "path": "flow_grpo/art/THIRD_PARTY_NOTICES.md",
+      "sha256": "42120c8779e784d8316a88a1944164f3654db8dda0e692dbea3fb6ff70385c20",
+      "adaptation_snapshot_sha256": "166ca341cea057af48cd33ba14ded081579cfe3da900e4049f7eb805b03c5d08",
+      "changed_for_release": true
+    },
+    {
+      "path": "flow_grpo/art/windows.py",
+      "sha256": "90a798c3877282d6903b5923d875ce943ee646d4563506ac0bb0598c9d043a83",
+      "adaptation_snapshot_sha256": "90a798c3877282d6903b5923d875ce943ee646d4563506ac0bb0598c9d043a83",
+      "changed_for_release": false
+    },
+    {
+      "path": "flow_grpo/diffusers_patch/__init__.py",
+      "sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "adaptation_snapshot_sha256": "e3b0c44298fc1c149afbf4c8996fb92427ae41e4649b934ca495991b7852b855",
+      "changed_for_release": false
+    },
+    {
+      "path": "flow_grpo/diffusers_patch/pipeline_sana.py",
+      "sha256": "f15756f3e633a85db148c0ef6adb155654139c04a2945c769ebb70b7cda61c8c",
+      "adaptation_snapshot_sha256": "f15756f3e633a85db148c0ef6adb155654139c04a2945c769ebb70b7cda61c8c",
+      "changed_for_release": false
+    },
+    {
+      "path": "flow_grpo/diffusers_patch/solver.py",
+      "sha256": "a8b869221c4186687f4b3c519f9fb8c6e37a257c73e433f8aab0b5e651d8e49b",
+      "adaptation_snapshot_sha256": "a8b869221c4186687f4b3c519f9fb8c6e37a257c73e433f8aab0b5e651d8e49b",
+      "changed_for_release": false
+    },
+    {
+      "path": "LICENSES/Flow-GRPO-MIT.txt",
+      "sha256": "3e06de116fc36fd16e2fb4cff7faa05496533723bf8faf81776a6f51ecc5328d"
+    },
+    {
+      "path": "LICENSES/MixGRPO.txt",
+      "sha256": "f77d450b9a366ae16a727a166dd5788f7bb15dc27d5df08c4b5a5e3640d56318"
+    },
+    {
+      "path": "scripts/download_assets.py",
+      "sha256": "b6d68d6c983a6bb04b76ccf297799c9e4b5e05b731d2afef7a275b2806796c3f"
+    },
+    {
+      "path": "scripts/evaluation_art_sana.py",
+      "sha256": "ada618f0f10f17bdfc53d1eaca8a267d7a9a0e05bf3554af0b67236d0f1d9d02",
+      "adaptation_snapshot_sha256": "ada618f0f10f17bdfc53d1eaca8a267d7a9a0e05bf3554af0b67236d0f1d9d02",
+      "changed_for_release": false
+    },
+    {
+      "path": "scripts/evaluation_sana.py",
+      "sha256": "918258bc646ba10b143216529e94e7c408d833bc87b59259b5f4520395857ef2",
+      "adaptation_snapshot_sha256": "918258bc646ba10b143216529e94e7c408d833bc87b59259b5f4520395857ef2",
+      "changed_for_release": false
+    },
+    {
+      "path": "scripts/train_art_sana.py",
+      "sha256": "dff7b320f9ee54a5162000b074818b6c33c8dcf141ace3cb155b62e3bf573901",
+      "adaptation_snapshot_sha256": "b622f3fb4ef07e3ac0ec4e66947954eb25755298ef9c970f72da9c22678629b0",
+      "changed_for_release": true
+    },
+    {
+      "path": "scripts/train_nft_sana.py",
+      "sha256": "a53d90da98fe1fe71d7d5d2e4731d66cf45e1856f83e85db2c151228de7c05ea",
+      "adaptation_snapshot_sha256": "bc45717aedbb104b4b5d4636f52267f63782ce6b8e130eea1b8226ac074e6a9d",
+      "changed_for_release": true
+    }
+  ],
+  "prompt_source": {
+    "repository": "https://github.com/NVlabs/DiffusionNFT",
+    "revision": "cbb14f84b8312b620390dfcbe2fab69c1383b104",
+    "verification": "Remote Git blob IDs match the local SHA256-verified reference prompt files."
+  }
+}

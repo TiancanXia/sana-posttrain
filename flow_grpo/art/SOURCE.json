@@ -1,0 +1,93 @@
+{
+  "schema_version": 1,
+  "upstream_repository": "https://github.com/vanzll/DiffusionART",
+  "source_snapshot": "DiffusionART-main",
+  "source_kind": "downloaded repository copy supplied in the workspace",
+  "upstream_revision": null,
+  "revision_note": "No Git commit is asserted for the downloaded copy; SHA256 identifies the inspected files. GitHub main links are navigational references.",
+  "license": "Apache-2.0; retained upstream notices identify third-party portions",
+  "inspection": "Static source review and PowerShell SHA256 comparisons only. No Python execution, imports, tests, package installation, or training.",
+  "files": [
+    {
+      "target": "art.py",
+      "operation": "byte-for-byte copy",
+      "source": "DiffusionART-main/src/visual_rl/algorithms/art.py",
+      "url": "https://github.com/vanzll/DiffusionART/blob/main/src/visual_rl/algorithms/art.py",
+      "source_and_target_sha256": "f05cde3ed4434efa3c6008927ebbc50e186180d0c8a2aa1083d6a0c4b2eb270d"
+    },
+    {
+      "target": "covariance.py",
+      "operation": "byte-for-byte copy",
+      "source": "DiffusionART-main/src/visual_rl/algorithms/covariance.py",
+      "url": "https://github.com/vanzll/DiffusionART/blob/main/src/visual_rl/algorithms/covariance.py",
+      "source_and_target_sha256": "81be369efaffaee1770994f5e61e52811fd677a3a7006828cf9646465c6c8187"
+    },
+    {
+      "target": "_validation.py",
+      "operation": "byte-for-byte copy",
+      "source": "DiffusionART-main/src/visual_rl/algorithms/_validation.py",
+      "url": "https://github.com/vanzll/DiffusionART/blob/main/src/visual_rl/algorithms/_validation.py",
+      "source_and_target_sha256": "bb7d9a03c38d92b2ab6a1e7eb8ee10ce0f3e25bfe2af6c05af124a0e3d607b66"
+    },
+    {
+      "target": "windows.py",
+      "operation": "extract unchanged prompt_disjoint_windows; reduce imports; add provenance",
+      "symbol": "prompt_disjoint_windows",
+      "source": "DiffusionART-main/src/visual_rl/training/objectives.py",
+      "url": "https://github.com/vanzll/DiffusionART/blob/main/src/visual_rl/training/objectives.py",
+      "source_file_sha256": "8838346cd2e41b12b894f1b7071f4489e9262ceda68c4d24a613100540c5e71c",
+      "function_normalized_lf_sha256": "62c8640027d642ca04665eeec68e3fce7b4133468381e4032ee52a8ee362ff08",
+      "function_hash_convention": "UTF-8, CRLF normalized to LF, trailing whitespace removed at end of extraction, then one terminal LF",
+      "target_file_sha256": "90a798c3877282d6903b5923d875ce943ee646d4563506ac0bb0598c9d043a83"
+    },
+    {
+      "target": "sampling.py",
+      "operation": "Sana adaptation of explicit Euler ODE and frozen pre-update CPU trajectory capture",
+      "sources": [
+        {
+          "source": "DiffusionART-main/src/visual_rl/sampling.py",
+          "url": "https://github.com/vanzll/DiffusionART/blob/main/src/visual_rl/sampling.py",
+          "sha256": "77be8c60ead59463b10b781e1a52db37177cc774c7ae717c9666bf06e1faf60e"
+        },
+        {
+          "source": "DiffusionART-main/src/visual_rl/training/rollout.py",
+          "url": "https://github.com/vanzll/DiffusionART/blob/main/src/visual_rl/training/rollout.py",
+          "sha256": "65515378a4da2232a47c4ef121747c8d0c01d8735da63625eac80a7f2ea20483"
+        },
+        {
+          "source": "DiffusionART-main/src/visual_rl/models/sd3.py",
+          "url": "https://github.com/vanzll/DiffusionART/blob/main/src/visual_rl/models/sd3.py",
+          "sha256": "7cb6d5d28995979042965d5d1172b7da3c32776f08d332c7afc6569384b17cae"
+        },
+        {
+          "source": "flow_grpo/diffusers_patch/pipeline_sana.py",
+          "role": "existing local Sana guided prediction and DC-AE decoding contract",
+          "sha256": "f15756f3e633a85db148c0ef6adb155654139c04a2945c769ebb70b7cda61c8c"
+        }
+      ],
+      "adaptation": "Use Sana scheduler sigmas; x_next=x+(sigma_next-sigma)*guided_velocity; float sigma*1000; internal Sana timestep_scale once; no velocity sign flip; DC-AE scaling factor without SD3 shift; FP32 small-batch VAE decoding; optional omission of trajectory caches for evaluation."
+    },
+    {
+      "target": "LICENSE",
+      "operation": "byte-for-byte copy",
+      "source": "DiffusionART-main/LICENSE",
+      "url": "https://github.com/vanzll/DiffusionART/blob/main/LICENSE",
+      "source_and_target_sha256": "c71d239df91726fc519c6eb72d318ec65820627232b2f796219e87dcf35d0ab4"
+    },
+    {
+      "target": "NOTICE",
+      "operation": "byte-for-byte copy",
+      "source": "DiffusionART-main/NOTICE",
+      "url": "https://github.com/vanzll/DiffusionART/blob/main/NOTICE",
+      "source_and_target_sha256": "0dc32db79c3622b8b7e6befe4ad9d5d23f68fe27e88633ee09fbb453dfd68497"
+    },
+    {
+      "target": "THIRD_PARTY_NOTICES.md",
+      "operation": "release replacement: scoped pointer to root applicable third-party notices",
+      "source": "DiffusionART-main/THIRD_PARTY_NOTICES.md",
+      "url": "https://github.com/vanzll/DiffusionART/blob/main/THIRD_PARTY_NOTICES.md",
+      "source_sha256": "166ca341cea057af48cd33ba14ded081579cfe3da900e4049f7eb805b03c5d08",
+      "target_sha256": "42120c8779e784d8316a88a1944164f3654db8dda0e692dbea3fb6ff70385c20"
+    }
+  ]
+}

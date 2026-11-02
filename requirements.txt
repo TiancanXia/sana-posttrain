@@ -1,0 +1,14 @@
+# Install CUDA-enabled PyTorch and torchvision first; see README.md.
+-c constraints.txt
+diffusers==0.36.0
+transformers==4.57.6
+peft>=0.17.0,<0.19
+accelerate>=1.0,<2
+huggingface-hub>=0.34.0,<1.0
+safetensors
+sentencepiece
+pillow
+numpy
+tqdm
+absl-py
+ml-collections

@@ -1,0 +1,17 @@
+Sana PostTrain
+Copyright 2026 TiancanXia
+
+An independent single-GPU Sana adaptation of DiffusionNFT and DiffusionART.
+This project is not an official NVIDIA, Kling AI, NUS or HKUST release.
+
+DiffusionNFT
+Copyright (c) 2025 NVIDIA CORPORATION & AFFILIATES. All rights reserved.
+
+DiffusionART
+Copyright 2026 DiffusionART contributors
+
+This project includes work derived from third-party projects.
+See THIRD_PARTY_NOTICES.md and the accompanying license files for attribution
+and applicable terms. Model weights and datasets are governed by their own
+licenses and are not covered by the project's Apache License, Version 2.0.
+The MixGRPO-derived NFT solver has additional terms; see LICENSES/MixGRPO.txt.
